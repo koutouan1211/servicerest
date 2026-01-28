@@ -1,16 +1,22 @@
 package com.lynda.servicerest.entite;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.CascadeType;
+=======
+>>>>>>> e1c83681ddbc4773f6fc8aac811d97a63ec669c1
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+<<<<<<< HEAD
 import jakarta.persistence.OneToMany;
+=======
+>>>>>>> e1c83681ddbc4773f6fc8aac811d97a63ec669c1
 import jakarta.persistence.Table;
 
 @Entity 
@@ -24,6 +30,7 @@ public class Client {
     Integer contacte;
     String compte;
     
+<<<<<<< HEAD
     //permet de lier client et abonnement
     @OneToMany(mappedBy = "client" , cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnore
@@ -36,6 +43,9 @@ public class Client {
 	public void setAbonnements(List<Abonnement> abonnements) {
 		this.abonnements = abonnements;
 	}
+=======
+    
+>>>>>>> e1c83681ddbc4773f6fc8aac811d97a63ec669c1
 	public Integer getId() {
 		return id;
 	}
